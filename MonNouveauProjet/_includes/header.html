@@ -1,4 +1,40 @@
-<header class="site-header">
+<header class="navbar" role="navigation">
+  <div class="navbar__container">
+    <a class="navbar__home" href="{{ '/' | relative_url }}">
+      <img class="navbar__logo" src="{{ '../assets/images/datalab-round.png' | relative_url }}"
+                                alt="template.data.gouv.fr" /><span class="navbar__domain">datalab.mi</span>
+    </a>
+
+    <nav>
+      <ul class="nav__links">
+        {% assign post_number = site.posts  | size  %}
+        {% if post_number > 0 %}
+        {% for collection in site.collections %}
+        <li class="nav__item"><a href="{{ collection.label | relative_url }}">{{ collection.label | capitalize }} </a></li>
+        {% endfor %}
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      Jekyll makes this data file available to you at site.data.{fileName.yml}
+      {% for item in site.data.navbar %}
+      <a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav> -->
+
+<!-- <header class="site-header">
 
   <div class="wrapper">
 
@@ -24,4 +60,4 @@
 
   </div>
 
-</header>
+</header> -->

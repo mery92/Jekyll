@@ -1,0 +1,56 @@
+// var-custom.scss -- Variables for project
+
+// Colors
+$white:         #FFFFFF;
+$primary:       #C52664;
+$primary-clear: #E52D75;
+$brand-2:       #FBA026;
+$brand-3:       #EB6B56;
+$brand-4:       #8569B1;
+$brand-5:       #2A80B9;
+$brand-6:       #16A086;
+$brand-7:       #FBA023;
+$gray-800:      #363636;
+$gray-200:      #e5e5e5;
+$gray-300:      #D5D5D5;
+$blue-dark:     #2A589B;
+
+$body-color:    #1F2244;
+
+$project-colors: (
+    "default": $body-color,
+    "primary": $primary,
+    "primary-clear": $primary,
+    "brand-2": $brand-2,
+    "brand-3": $brand-3,
+    "brand-4": $brand-4,
+    "brand-5": $brand-5,
+    "brand-6": $brand-6,
+    "brand-7": $brand-7,
+    "gray-800": $gray-800,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "white": $white
+);
+
+// Font weight
+$fw-light : 300;
+$fw-regular : 400;
+$fw-medium : 500;
+$fw-semiBold : 600;
+$fw-bold : 700;
+$fw-extraBold : 800;
+$fw-black : 900;
+
+$typo-familles-weight: (
+    "light": $fw-light,
+    "regular": $fw-regular,
+    "medium": $fw-medium,
+    "semiBold": $fw-semiBold,
+    "bold": $fw-bold,
+    "extraBold": $fw-extraBold,
+    "black": $fw-black,
+);
+
+$block-space: 8rem;
+$block-space-desktop: 8rem;
