@@ -1,0 +1,23 @@
+// var-custom.scss -- Variables for project
+
+// Colors
+$brand-2:       #B95E06;
+$brand-3:       #C65146;
+$brand-5:       #2A7BBD;
+$brand-6:       #1E7C6D;
+
+$project-colors: (
+    "default": $body-color,
+    "primary": $primary,
+    "primary-clear": $primary,
+    "brand-2": $brand-2,
+    "brand-3": $brand-3,
+    "brand-4": $brand-4,
+    "brand-5": $brand-5,
+    "brand-6": $brand-6,
+    "brand-7": $brand-7,
+    "gray-800": $gray-800,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "white": $white
+);
